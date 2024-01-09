@@ -1,4 +1,0 @@
-﻿function Method()
-{
-	[Guid]::New()
-}

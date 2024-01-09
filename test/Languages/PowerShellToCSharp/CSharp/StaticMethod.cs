@@ -1,4 +1,0 @@
-﻿void Method()
-{
-	Guid.New();
-}

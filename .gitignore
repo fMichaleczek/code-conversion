@@ -1,6 +1,7 @@
-src/bin
+src/CodeConversion/bin
 src/obj
-test/bin
-test/obj
+tests/CodeConversion.Tests/bin
+tests/CodeConversion.Tests/obj
 .vs/
-output/
+module/
+examples/generated

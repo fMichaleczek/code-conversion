@@ -1,0 +1,15 @@
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\CodeConversion.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\CodeConversion.deps.json
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\CodeConversion.pdb
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\Microsoft.CodeAnalysis.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\Newtonsoft.Json.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Management.Automation.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Buffers.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Collections.Immutable.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Memory.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Numerics.Vectors.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Reflection.Metadata.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Text.Encoding.CodePages.dll
+C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\module\CodeConversion\System.Threading.Tasks.Extensions.dll

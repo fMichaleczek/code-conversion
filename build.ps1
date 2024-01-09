@@ -1,30 +1,31 @@
 param($Configuration = 'Debug')
 
-$Path = Join-Path $PSScriptRoot "CodeConversion" 
-Remove-Item -Path $Path -Recurse -Force -ErrorAction SilentlyContinue
-
 Push-Location $PSScriptRoot
-New-Item -Path $Path -ItemType Directory
 
-@("win7-x64", 'linux-x64') | ForEach-Object {
-    dotnet publish -c $Configuration -o (Join-Path $Path $_) -r $_
+$sourcePath = Join-Path $PSScriptRoot 'src/CodeConversion'
+$destPath = Join-Path $PSScriptRoot 'module/CodeConversion'
+
+Remove-Item -Path $destPath -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -Path $destPath -ItemType Directory
+
+Copy-Item "CodeConversion.psm1" $destPath
+
+$parameters = @{
+    Path               = "$destPath\CodeConversion.psd1"
+    Author             = ''
+    CompanyName        = ''
+    ModuleVersion      = '1.0.0'
+    Description        = 'Convert C# to PowerShell'
+    RootModule         = "CodeConversion.psm1"
+    FunctionsToExport  = @("Invoke-CSharpConversion")
+    RequiredAssemblies = 'CodeConversion.dll'
+    ProjectUri         = 'https://github.com/fmichaleczek/code-conversion'
+    LicenseUri         = 'https://github.com/fmichaleczek/code-conversion/blob/main/LICENSE'
+
 }
+New-ModuleManifest @parameters
 
-Copy-Item "CodeConversion.psm1" $Path
+Set-Location $sourcePath
+dotnet publish -c $Configuration -o $destPath
 
-$Parameters = @{
-    Path              = "$Path\CodeConversion.psd1"
-    Author            = 'Adam Driscoll'
-    CompanyName       = 'Ironman Software'
-    ModuleVersion     = '2.0.2'
-    Description       = 'Convert between PowerShell and C#'
-    RootModule        = "CodeConversion.psm1"
-    FunctionsToExport = @("Invoke-CodeConversion")
-    ProjectUri        = 'https://github.com/ironmansoftware/code-conversion'
-    LicenseUri        = 'https://github.com/ironmansoftware/code-conversion/blob/main/LICENSE'
-
-}
-
-New-ModuleManifest @Parameters
-
-Pop-Location 
+Pop-Location

@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CodeConversion
+build_property.ProjectDir = C:\Projects\repos\lexpek\modules-core\compilation\src\code\Roslyn.PSConverter\fork\code-conversion\src\CodeConversion\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
